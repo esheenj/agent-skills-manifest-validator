@@ -6,6 +6,16 @@ An original MIT-licensed, offline, dependency-free review tool for portable [Age
 
 **Live demo:** https://esheenj.github.io/agent-skills-manifest-validator/
 
+## Product purpose
+
+**Agent Skills Manifest Inspector** is the public, searchable product name. It helps developers and AI integration teams review *permitted* Agent Skills `SKILL.md` text before sharing or installing it.
+
+**Input:** a local skill manifest and declared folder name. **Output:** reproducible subset-format findings and human-review hints for metadata and suspicious instruction patterns; no skill execution or remote verification occurs.
+
+**Commercial pathway:** the free MIT demonstration may support a separately scoped skill-onboarding or integration review via [Sigma Code](mailto:info@sigmacode.co.za?subject=Agent%20Skills%20manifest%20review). An enquiry is not a verified security review, certification or active paid service.
+
+**Boundary:** this is not the authoritative full Agent Skills validator or an agent identity, capability or safety certification. The repository slug, package name, CLI and existing URLs remain stable.
+
 ## Run locally
 
 ```bash
