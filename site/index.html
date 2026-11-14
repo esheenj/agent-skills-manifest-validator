@@ -1,0 +1,35 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0c1115"><meta name="description" content="Review Agent Skills SKILL.md metadata and instruction risks with a transparent offline format subset inspector.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Agent Skills Manifest Inspector — Esheen Labs</title>
+<link rel="stylesheet" href="./style.css"><script type="module" src="./app.mjs"></script>
+</head><body><a class="skip" href="#workspace">Skip to inspector</a>
+<div class="layout">
+<header class="top"><a href="https://github.com/esheenj/agent-skills-manifest-validator" class="brand"><span class="symbol">Σ</span><span>SIGMA <b>/ LABS</b><small>OPEN INTELLIGENCE</small></span></a><span class="state-top"><span class="dot"></span> PRIVATE-BY-DESIGN <span class="edition">OSS / 014</span></span></header>
+<main>
+<section class="hero">
+ <div class="label"><span class="line"></span> SKILL.MD / ENGINEERING READINESS</div>
+ <h1>Check the package.<br><em>Question the permissions.</em></h1>
+ <p>Inspect an Agent Skills <code>SKILL.md</code> before sharing it. Catch metadata issues, folder mismatches, broad tool declarations, and instructions worth a closer look—with no upload, API key or live execution.</p>
+ <div class="features"><span>LOCAL BROWSER CHECKS</span><span>OPEN RULES</span><span>EXPORTABLE FINDINGS</span></div>
+</section>
+<section class="workspace" id="workspace" aria-labelledby="workspace-title">
+ <div class="head"><div><span class="eyebrow">01 / INPUT</span><h2 id="workspace-title">Skill inspection</h2></div><button class="secondary" type="button" id="example">Restore example ↗</button></div>
+ <div class="input-row">
+  <div class="field"><label for="folder">Parent folder name</label><input id="folder" spellcheck="false" autocomplete="off" placeholder="incident-review"></div>
+  <p>By the Agent Skills convention, the declared <code>name</code> should match the folder containing <code>SKILL.md</code>.</p>
+ </div>
+ <div class="editor"><div class="editor-top"><label for="source">SKILL.md source</label><span>PLAIN TEXT / 1 MiB MAX</span></div><textarea id="source" spellcheck="false" aria-describedby="edit-note"></textarea>
+ <div class="editor-footer"><p id="edit-note">Paste fictional or permitted skill text. It stays in this browser. This tool does not execute any instructions it reads.</p><button id="inspect" type="button" class="primary">Inspect skill <span aria-hidden="true">→</span></button></div></div>
+</section>
+<section class="results" aria-labelledby="results-title">
+ <div class="head"><div><span class="eyebrow">02 / EVIDENCE</span><h2 id="results-title">Inspection results</h2></div><span class="badge" id="status" role="status" aria-live="polite">READY</span></div>
+ <div class="stats"><div><span>REQUIRED FIXES</span><strong id="errors">—</strong></div><div><span>MANUAL REVIEWS</span><strong id="reviews">—</strong></div><div><span>NOTES</span><strong id="notes">—</strong></div></div>
+ <p id="summary" class="summary">Inspect the sample to see clear findings and supporting checks.</p>
+ <ol id="findings" class="findings" aria-live="polite"></ol>
+ <div class="bottom"><span>INSPECTED TEXT DOES NOT GRANT EXECUTION AUTHORITY</span><button type="button" class="secondary" id="export" disabled>Save JSON report ↓</button></div>
+</section>
+<section class="explain"><div><span class="eyebrow">03 / WHAT THIS MEANS</span><h2>Format is not trust.</h2></div><p>The specification defines how skills are packaged, not whether the author is genuine or the instructions are safe. This lightweight checker handles simple YAML scalars and flags complex YAML for manual review. For authoritative format validation, use the upstream <code>skills-ref</code> reference validator. For security, inspect all scripts, external resources, and runtime permissions separately.</p></section>
+</main><footer><span>© 2026 ESHEEN LABS · ORIGINAL OPEN SOURCE</span><div><a href="https://agentskills.io/specification" rel="noopener noreferrer">Agent Skills spec</a><a href="https://github.com/esheenj/agent-skills-manifest-validator" rel="noopener noreferrer">Source &amp; tests ↗</a></div></footer>
+</div></body></html>
